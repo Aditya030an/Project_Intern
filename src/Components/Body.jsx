@@ -47,7 +47,7 @@ const Body = () => {
 
   return (
     <div className="relative mt-24 w-full flex items-center justify-center z-10">
-      <div className="w-full sm:w-9/12 flex flex-col mt-4 gap-5 sm:gap-10 pb-8">
+      <div className="w-full sm:w-9/12 flex flex-col mt-4 gap-5 sm:gap-10 pb-8 ">
         <div className="flex flex-wrap sm:flex-nowrap gap-2 items-center justify-between overflow-hidden">
           <div className="text-[#0029FF] text-2xl font-semibold sm:text-3xl sm:font-bold">
             {projectData?.title}
@@ -64,10 +64,10 @@ const Body = () => {
             {projectData?.tasks[0]?.task_description}
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-7 sm:gap-14 border-2 border-red-500">
+        <div className="flex flex-wrap items-center justify-center gap-7 sm:gap-14 ">
           {projectData?.tasks[0]?.assets.map((item, index) => (
             <div
-              className="w-full sm:w-[530px] sm:h-[690px]  overflow-hidden rounded-b-lg shadow-lg  border-2 border-green-500"
+              className="w-full sm:w-[500px] sm:h-[690px]  overflow-hidden rounded-b-lg shadow-lg  border-2 border-green-500"
               key={item?.asset_id}
             >
               <div className="bg-black text-lg sm:text-xl font-medium text-center text-white rounded-t-2xl p-2 flex items-center justify-between">
@@ -108,7 +108,7 @@ const Body = () => {
                       <h2 className="ml-2">Thread A</h2>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-5 px-2 ">
-                      <div className="w-full sm:w-[230px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
+                      <div className="w-full sm:w-[220px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
                         <h2 className="sm:text-lg font-medium p-1 px-5">
                           Sub thread 1
                         </h2>
@@ -119,7 +119,7 @@ const Body = () => {
                           className="w-full h-4/6 rounded-lg outline-none p-2 resize-none overflow-auto"
                           />
                       </div>
-                      <div className="w-full sm:w-[230px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
+                      <div className="w-full sm:w-[220px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
                         <h2 className="sm:text-lg font-medium p-1 px-5">
                           Sub thread 2
                         </h2>
@@ -153,8 +153,8 @@ const Body = () => {
                         <h2>Sub-thread</h2>
                       </div>
                     </div>
-                    <div className="px-8 w-full ">
-                      <div className="w-full sm:w-[250px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden ">
+                    <div className="px-8 w-full">
+                      <div className="w-full  h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden ">
                         <h2 className="sm:text-lg font-medium p-1 px-5">
                           Summary Of thread A
                         </h2>
