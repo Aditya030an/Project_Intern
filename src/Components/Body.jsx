@@ -64,10 +64,10 @@ const Body = () => {
             {projectData?.tasks[0]?.task_description}
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-7 sm:gap-20">
+        <div className="flex flex-wrap items-center justify-center gap-7 sm:gap-14 border-2 border-red-500">
           {projectData?.tasks[0]?.assets.map((item, index) => (
             <div
-              className="w-full sm:w-[560px] sm:h-[690px]  overflow-hidden rounded-b-lg shadow-lg "
+              className="w-full sm:w-[530px] sm:h-[690px]  overflow-hidden rounded-b-lg shadow-lg  border-2 border-green-500"
               key={item?.asset_id}
             >
               <div className="bg-black text-lg sm:text-xl font-medium text-center text-white rounded-t-2xl p-2 flex items-center justify-between">
@@ -108,7 +108,7 @@ const Body = () => {
                       <h2 className="ml-2">Thread A</h2>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 sm:gap-5 px-2 ">
-                      <div className="w-full sm:w-[250px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
+                      <div className="w-full sm:w-[230px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
                         <h2 className="sm:text-lg font-medium p-1 px-5">
                           Sub thread 1
                         </h2>
@@ -119,7 +119,7 @@ const Body = () => {
                           className="w-full h-4/6 rounded-lg outline-none p-2 resize-none overflow-auto"
                           />
                       </div>
-                      <div className="w-full sm:w-[250px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
+                      <div className="w-full sm:w-[230px] h-[120px] rounded-lg shadow-md bg-gray-200 overflow-hidden">
                         <h2 className="sm:text-lg font-medium p-1 px-5">
                           Sub thread 2
                         </h2>
