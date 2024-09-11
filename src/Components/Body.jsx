@@ -67,7 +67,7 @@ const Body = () => {
         <div className="flex flex-wrap items-center justify-center gap-7 sm:gap-14 ">
           {projectData?.tasks[0]?.assets.map((item, index) => (
             <div
-              className="w-full sm:w-[500px] sm:h-[690px]  overflow-hidden rounded-b-lg shadow-lg  border-2 border-green-500"
+              className="w-full sm:w-[500px] sm:h-[690px]  overflow-hidden rounded-b-lg shadow-lg  "
               key={item?.asset_id}
             >
               <div className="bg-black text-lg sm:text-xl font-medium text-center text-white rounded-t-2xl p-2 flex items-center justify-between">
@@ -95,7 +95,6 @@ const Body = () => {
                         src={item?.asset_content}
                         title="YouTube video player"
                         className="absolute top-0 left-0 w-full h-full"
-                        frameBorder="0"
                         allowFullScreen
                       ></iframe>
                     </div>
